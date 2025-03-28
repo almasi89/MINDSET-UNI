@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mindset Uni | Onboarding</title>
+  <link rel="stylesheet" href="onboard.css">
+</head>
+<body>
+  <div class="onboard-container">
+    <h1>Welcome to Mindset Uni!</h1>
+    
+    <!-- Profile Form (Hidden by default) -->
+    <div id="profile-form" class="form-container">
+      <h2>Complete Your Profile</h2>
+      <form id="profileForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="interests">Interests</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="interests" value="Stress Management"> Stress Management</label>
+            <label><input type="checkbox" name="interests" value="Time Management"> Time Management</label>
+            <label><input type="checkbox" name="interests" value="Academic Support"> Academic Support</label>
+            <label><input type="checkbox" name="interests" value="Peer Networking"> Peer Networking</label>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn">Save Profile</button>
+      </form>
+      <!-- Mentor Assignment Section -->
+    <div id="mentor-assignment" class="mentor-container" style="display: none;">
+        <h2>Your Assigned Mentor</h2>
+        <div class="mentor-card">
+          <div class="mentor-avatar" id="mentor-avatar">
+            <span id="mentor-initials"></span>
+          </div>
+          <div class="mentor-details">
+            <h3 id="mentor-name">Loading mentor...</h3>
+            <p><strong>Expertise:</strong> <span id="mentor-expertise"></span></p>
+            <p><strong>Specialization:</strong> <span id="mentor-category"></span></p>
+            <button id="contact-mentor" class="btn mentor-btn">Contact Mentor</button>
+          </div>
+    </div>
+
+  </div>
+  <script src="onboard.js"></script>
+</body>
+</html>

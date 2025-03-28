@@ -1,0 +1,34 @@
+{
+    "mentors": [
+      {
+        "id": 1,
+        "name": "dr job",
+        "expertise": "relief",
+        "category": "Stress management"
+
+      },
+     
+
+      {
+        "id": 2,
+        "name": "dr maina",
+        "expertise": "networking",
+        "category": "peer networking"
+
+      },
+      {
+        "id": 3,
+        "name": "dr flo",
+        "expertise": "management",
+        "category": "time management"
+
+      },
+      {
+        "id": 4,
+        "name": "dr yego",
+        "expertise": "support",
+        "category": "academic support"
+
+      }
+    ]
+}

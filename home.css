@@ -1,0 +1,23 @@
+h1{
+    background-color: red;
+    text-align: center;
+    width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.navbar{
+    background-color: yellow;
+    padding: 20px;
+
+}
+.nav-links{
+    display: flex;
+    gap: 150px;
+}
+body {
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/1838685760/display_1500/stock-photo-silhouette-man-jumping-over-cliffs-for-i-can-do-it-good-mindset-by-never-give-up-concept-1838685760.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+}

@@ -1,0 +1,111 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+  }
+  
+  .onboard-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #3498db;
+    margin-bottom: 2rem;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  
+  /* Form Elements */
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Checkbox Group */
+  .checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.2s;
+  }
+  
+  .checkbox-group label:hover {
+    background: #f0f8ff;
+  }
+  
+  /* Button Styles */
+  .btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .checkbox-group {
+      grid-template-columns: 1fr;
+    }
+    
+    .form-container {
+      padding: 1.5rem;
+    }
+  }
