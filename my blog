@@ -1,0 +1,48 @@
+---
+title: "Mindset Uni: 
+published: true
+tags: ["javascript", "mentalhealth", "webdev", "beginners"]
+cover_image: "https://www.shutterstock.com/shutterstock/photos/1838685760/display_1500/stock-photo-silhouette-man-jumping-over-cliffs-for-i-can-do-it-good-mindset-by-never-give-up-concept-1838685760.jpg"
+---
+
+# Building Mindset University 
+### How I created a mental health web app without frameworks  
+
+##  **The Problem**  
+As a developer, I struggled with:  
+- **Burnout** from endless tutorials without progress  
+- **Imposter syndrome** when comparing myself to others  
+- **Inconsistent motivation** (especially after failed builds)  
+ 
+
+---
+
+## 🛠️ **Tech Stack**  
+- **Frontend**: Pure HTML/CSS/JS (no frameworks!)  
+- **Data**: `db.json` (mock REST API with `json-server`)  
+- **Hosting**: github 
+
+
+---
+
+##  **Core Features**  
+
+### 1. **Affirmation Generator**  
+Fetches personalized affirmations from `db.json`:  
+
+```javascript
+// db.json
+{
+  "affirmations": [
+    { "id": 1, "text": "My coding skills grow with every error message" },
+    { "id": 2, "text": "I compare myself only to my past self" }
+  ]
+}
+
+// app.js
+fetch('http://localhost:3000/affirmations')
+  .then(res => res.json())
+  .then(data => {
+    const randomAffirmation = data[Math.floor(Math.random() * data.length)];
+    document.getElementById('affirmation').textContent = randomAffirmation.text;
+  });
