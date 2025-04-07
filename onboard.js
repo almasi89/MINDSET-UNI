@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
      
       try {
         // Fetch mentors and assign
-        const response = await fetch('http://localhost:3000/mentors');
+        const response = await fetch('https://json-server-vercel-three-ecru.vercel.app/mentors');
         const mentors = await response.json();
         const assignedMentor = assignMentor(mentors, formData.interests);
         displayMentor(assignedMentor);
