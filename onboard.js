@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
      
       try {
         // Fetch mentors and assign
-        const response = await fetch('https://json-server-vercel-three-ecru.vercel.app/mentors');
+        const response =await fetch('https://json-server-vercel-three-ecru.vercel.app/mentors');
         const mentors = await response.json();
         const assignedMentor = assignMentor(mentors, formData.interests);
         displayMentor(assignedMentor);
@@ -92,6 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('mentor-name').textContent = mentor.name;
       document.getElementById('mentor-expertise').textContent = mentor.expertise;
       document.getElementById('mentor-category').textContent = mentor.category;
+      //console.log("works")
+      //document.getElementById('mentor-avatar').textContent = mentor.image;
+      //console.log("done")
       
       // Generate avatar initials
       const initials = mentor.name.split(' ').map(n => n[0]).join('');
